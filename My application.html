@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">JobPortal</div>
+
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="My%20application.html">My Applications</a>
+            <a href="Profile.html">Profile</a>
+        </nav>
+    </header>
+
+    <section class="details">
+
+        <h1>My Applications</h1>
+
+        <div class="application-card">
+
+    <h2>Frontend Developer</h2>
+
+    <p><strong>Name:</strong> <span id="applicantName"></span></p>
+    <p><strong>Email:</strong> <span id="applicantEmail"></span></p>
+    <p><strong>Phone:</strong> <span id="applicantPhone"></span></p>
+
+    <p><strong>Company:</strong> Infosys</p>
+    <p><strong>Location:</strong> Chennai</p>
+    <p><strong>Salary:</strong> ₹5 - ₹8 LPA</p>
+    <p><strong>Status:</strong> Applied</p>
+
+    <a href="Job%20details.html" class="btn">
+        View Job Details
+    </a>
+
+</div>
+
+    </section>
+    </section>
+
+<script>
+    document.getElementById("applicantName").textContent =
+        localStorage.getItem("applicantName") || "";
+
+    document.getElementById("applicantEmail").textContent =
+        localStorage.getItem("applicantEmail") || "";
+
+    document.getElementById("applicantPhone").textContent =
+        localStorage.getItem("applicantPhone") || "";
+</script>
+
+</body>
+</html>
+
